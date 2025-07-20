@@ -1,0 +1,2 @@
+# oppaWord
+အိုပါး word segmenter
