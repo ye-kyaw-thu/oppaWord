@@ -125,10 +125,9 @@
 
 ---
 
-### **Key Takeaways for Students**
+### **Key Takeaways**
 1. **Dictionary-only** is fast but fails on OOV words.
 2. **Syllable frequencies** help guess OOV words.
 3. **ARPA LM** improves accuracy by considering word context.
 4. **λ (lambda)** controls the tradeoff between dictionary and statistical scores.
 
-Would you like a **Jupyter Notebook** with these examples runnable in Python? I can provide one with actual oppaWord code execution!
