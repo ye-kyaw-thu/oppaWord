@@ -1,5 +1,5 @@
 # oppaWord
-## Algorithm Exlanation
+## Algorithm Explanation
 
 ## **1. Dictionary-Only Segmentation**
 **Command:** `python oppaWord.py -i input.txt -w words.txt --no-sylbreak`
