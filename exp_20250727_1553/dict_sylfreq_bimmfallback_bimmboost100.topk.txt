@@ -1,0 +1,83 @@
+
+Word Segmentation Evaluation Results
+============================================================
+Metric                         Score
+------------------------------------------------------------
+Word Precision                0.9323
+Word Recall                   0.9254
+Word F1-score                 0.9288
+------------------------------------------------------------
+Boundary Precision            0.6165
+Boundary Recall               0.6119
+Boundary F1-score             0.6142
+------------------------------------------------------------
+Vocab Precision               0.9159
+Vocab Recall                  0.9245
+Vocab F1-score                0.9202
+============================================================
+
+Additional Statistics:
+Reference words: 134
+Hypothesis words: 133
+Correct words: 124
+Reference vocabulary size: 106
+Hypothesis vocabulary size: 107
+Common vocabulary: 98
+
+Top Segmentation Errors Analysis
+============================================================
+Total errors: 48
+
+Most Frequent Over-Segmentation Errors (System split where it shouldn't):
+
+Most Frequent Under-Segmentation Errors (System joined what should be separate):
+
+Most Frequent Complex Boundary Errors:
+    1 × REF: 'လူဦးရေ' → HYP: 'လူဦး'
+    1 × REF: '၁၁၅၉၃၁' → HYP: 'ရေ'
+    1 × REF: 'ယောက်' → HYP: '၁၁၅၉၃၁'
+    1 × REF: 'ရှိ' → HYP: 'ယောက်'
+    1 × REF: 'သည်' → HYP: 'ရှိ'
+    1 × REF: 'လုပ်' → HYP: 'လုပ်ချိန်'
+    1 × REF: 'ချိန်' → HYP: 'အပြင်'
+    1 × REF: 'အပြင်' → HYP: 'လစာ'
+    1 × REF: 'လစာ' → HYP: 'နှင့်တကွ'
+    1 × REF: 'နှင့်တကွ' → HYP: 'အခါ'
+    1 × REF: 'အခါ' → HYP: 'ကာလ'
+    1 × REF: 'ကာလ' → HYP: 'အားလျော်စွာ'
+    1 × REF: 'အားလျော်စွာ' → HYP: 'သတ်မှတ်'
+    1 × REF: 'သတ်မှတ်' → HYP: 'ထား'
+    1 × REF: 'ထား' → HYP: 'သည့်'
+    1 × REF: 'သည့်' → HYP: 'အလုပ်'
+    1 × REF: 'အလုပ်' → HYP: 'အားလပ်ရက်'
+    1 × REF: 'အားလပ်ရက်' → HYP: 'များ'
+    1 × REF: 'များ' → HYP: 'ပါဝင်'
+    1 × REF: 'ပါဝင်' → HYP: 'သည့်'
+    1 × REF: 'သည့်' → HYP: 'အနားယူခွင့်'
+    1 × REF: 'အနားယူခွင့်' → HYP: 'နှင့်'
+    1 × REF: 'နှင့်' → HYP: 'အားလပ်ခွင့်'
+    1 × REF: 'အားလပ်ခွင့်' → HYP: 'ခံစားပိုင်ခွင့်'
+    1 × REF: 'ခံစားပိုင်ခွင့်' → HYP: 'ရှိ'
+    1 × REF: 'ရှိ' → HYP: 'သည်'
+    1 × REF: 'ရှေ့' → HYP: 'ရှေ့မှာ'
+    1 × REF: 'မှာ' → HYP: 'အလွတ်'
+    1 × REF: 'အလွတ်' → HYP: 'ပြန်'
+    1 × REF: 'ပြန်' → HYP: 'ပြီး'
+    1 × REF: 'ပြီး' → HYP: 'ရွတ်ပြ'
+    1 × REF: 'ရွတ်ပြ' → HYP: 'ရ'
+    1 × REF: 'ရ' → HYP: 'တာ'
+    1 × REF: 'တာ' → HYP: 'ပေါ့'
+    1 × REF: 'သန်းဝင်းလှိုင်' → HYP: 'သန်း'
+    1 × REF: '၂၀၀၉' → HYP: 'ဝင်း'
+    1 × REF: 'ခု' → HYP: 'လှိုင်'
+    1 × REF: 'မေ' → HYP: '၂၀၀၉'
+    1 × REF: 'လ' → HYP: 'ခု'
+    1 × REF: 'ကံကော်ဝတ်ရည်' → HYP: 'မေ'
+    1 × REF: 'စာပေ' → HYP: 'လ'
+    1 × REF: 'လက်' → HYP: 'လက်လုပ်'
+    1 × REF: 'လုပ်' → HYP: 'ချင်'
+    1 × REF: 'ချင်' → HYP: 'ပါ'
+    1 × REF: 'ပါ' → HYP: 'တယ်'
+    1 × REF: 'ဘယ်' → HYP: 'ဘယ်တော့'
+    1 × REF: 'တော့' → HYP: 'ပါ'
+    1 × REF: 'ပါ' → HYP: 'လဲ'

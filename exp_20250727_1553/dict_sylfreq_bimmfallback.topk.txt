@@ -1,0 +1,85 @@
+
+Word Segmentation Evaluation Results
+============================================================
+Metric                         Score
+------------------------------------------------------------
+Word Precision                0.2115
+Word Recall                   0.3582
+Word F1-score                 0.2659
+------------------------------------------------------------
+Boundary Precision            0.0529
+Boundary Recall               0.0896
+Boundary F1-score             0.0665
+------------------------------------------------------------
+Vocab Precision               0.3514
+Vocab Recall                  0.4906
+Vocab F1-score                0.4094
+============================================================
+
+Additional Statistics:
+Reference words: 134
+Hypothesis words: 227
+Correct words: 48
+Reference vocabulary size: 106
+Hypothesis vocabulary size: 148
+Common vocabulary: 52
+
+Top Segmentation Errors Analysis
+============================================================
+Total errors: 124
+
+Most Frequent Over-Segmentation Errors (System split where it shouldn't):
+
+Most Frequent Under-Segmentation Errors (System joined what should be separate):
+
+Most Frequent Complex Boundary Errors:
+    2 × REF: 'ကျွန်တော်' → HYP: 'ကျွန်'
+    1 × REF: 'ခုနှစ်' → HYP: 'ခု'
+    1 × REF: 'ခန့်မှန်း' → HYP: 'နှစ်'
+    1 × REF: 'သန်းခေါင်စာရင်း' → HYP: 'ခန့်'
+    1 × REF: 'အရ' → HYP: 'မှန်း'
+    1 × REF: 'လူဦးရေ' → HYP: 'သန်း'
+    1 × REF: '၁၁၅၉၃၁' → HYP: 'ခေါင်'
+    1 × REF: 'ယောက်' → HYP: 'စာ'
+    1 × REF: 'ရှိ' → HYP: 'ရင်း'
+    1 × REF: 'သည်' → HYP: 'အ'
+    1 × REF: 'သင့်မြတ်' → HYP: 'သင့်'
+    1 × REF: 'လျော်ကန်' → HYP: 'မြတ်'
+    1 × REF: 'စွာ' → HYP: 'လျော်'
+    1 × REF: 'ကန့်သတ်' → HYP: 'ကန်'
+    1 × REF: 'ထား' → HYP: 'စွာ'
+    1 × REF: 'သည့်' → HYP: 'ကန့်'
+    1 × REF: 'အလုပ်' → HYP: 'သတ်'
+    1 × REF: 'လုပ်' → HYP: 'ထား'
+    1 × REF: 'ချိန်' → HYP: 'သည့်'
+    1 × REF: 'အပြင်' → HYP: 'အ'
+    1 × REF: 'လစာ' → HYP: 'လုပ်'
+    1 × REF: 'နှင့်တကွ' → HYP: 'လုပ်'
+    1 × REF: 'အခါ' → HYP: 'ချိန်'
+    1 × REF: 'ကာလ' → HYP: 'အ'
+    1 × REF: 'အားလျော်စွာ' → HYP: 'ပြင်'
+    1 × REF: 'သတ်မှတ်' → HYP: 'လ'
+    1 × REF: 'ထား' → HYP: 'စာ'
+    1 × REF: 'သည့်' → HYP: 'နှင့်'
+    1 × REF: 'အလုပ်' → HYP: 'တ'
+    1 × REF: 'အားလပ်ရက်' → HYP: 'ကွ'
+    1 × REF: 'များ' → HYP: 'အ'
+    1 × REF: 'ပါဝင်' → HYP: 'ခါ'
+    1 × REF: 'သည့်' → HYP: 'ကာ'
+    1 × REF: 'အနားယူခွင့်' → HYP: 'လ'
+    1 × REF: 'နှင့်' → HYP: 'အား'
+    1 × REF: 'အားလပ်ခွင့်' → HYP: 'လျော်'
+    1 × REF: 'ခံစားပိုင်ခွင့်' → HYP: 'စွာ'
+    1 × REF: 'ရှိ' → HYP: 'သတ်'
+    1 × REF: 'သည်' → HYP: 'မှတ်'
+    1 × REF: 'စစ်ယူ' → HYP: 'စစ်'
+    1 × REF: 'သော' → HYP: 'ယူ'
+    1 × REF: 'နည်း' → HYP: 'သော'
+    1 × REF: 'ဟု' → HYP: 'နည်း'
+    1 × REF: 'ခေါ်' → HYP: 'ဟု'
+    1 × REF: 'သည်' → HYP: 'ခေါ်'
+    1 × REF: 'စာပြန်ပွဲ' → HYP: 'စာ'
+    1 × REF: 'ဆို' → HYP: 'ပြန်'
+    1 × REF: 'တာ' → HYP: 'ပွဲ'
+    1 × REF: 'က' → HYP: 'ဆို'
+    1 × REF: 'အာဂုံဆောင်' → HYP: 'တာ'
