@@ -205,3 +205,26 @@ SOURCE|||TARGET
 3. Domain adaptation:
    - Customize `data/rules.txt` for post-editing
    - Add domain terms to dictionary
+  
+## License
+
+### Source Code & Tools
+**MIT License** - Full terms available at:  
+[https://github.com/ye-kyaw-thu/oppaWord/blob/main/LICENSE](https://github.com/ye-kyaw-thu/oppaWord/blob/main/LICENSE)
+
+### Dictionary Data
+
+The dictionary combines words from multiple sources:  
+
+- myG2P dictionary (originally from Myanmar Language Commission)
+- myPOS corpus
+- Personal names from myRoman corpus and LU Lab's Myanmar names collection (for R&D)
+- myMono monolingual corpus (not publicly released)
+
+**Usage Restrictions**:
+- ✅ **Allowed**: Myanmar language NLP/AI research and development
+- ❌ **Not Allowed**: Commercial use without explicit permission
+
+**Important Notes**:
+1. While LU Lab has spent years compiling this dictionary, we do not claim ownership of the underlying words.
+2. The dictionary is provided as a research aid - users assume full responsibility for compliance with original source requirements.
