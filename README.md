@@ -93,4 +93,47 @@ options:
   --visualize-dag       Generate DAG visualizations
 ```
 
+## Visualization
+
+Debug segmentation decisions using DAG visualizations:  
+
+```
+python oppa_word.py \
+  --input ./data/10lines.ref \
+  --dict ./data/myg2p_mypos.dict \
+  --space-remove-mode "my_not_num" \
+  --use-bimm-fallback \
+  --bimm-boost 150 \
+  --visualize-dag \
+  --dag-output-dir debug_viz2
+```
+
+Visualization Demo:  
+
+```
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python oppa_word.py \
+>   --input ./data/10lines.ref \
+>   --dict ./data/myg2p_mypos.dict \
+>   --space-remove-mode "my_not_num" \
+>   --use-bimm-fallback \
+>   --bimm-boost 150 \
+>   --visualize-dag \
+>   --dag-output-dir debug_viz2
+၁၉၆၂ ခုနှစ် ခန့်မှန်း သန်းခေါင်စာရင်း အရ လူဦး ရေ ၁၁၅၉၃၁ ယောက် ရှိ သည်
+လူ တိုင်း တွင် သင့်မြတ် လျော်ကန် စွာ ကန့်သတ် ထား သည့် အလုပ်လုပ်ချိန် အပြင် လစာ နှင့်တကွ အခါ ကာလ အားလျော်စွာ သတ်မှတ် ထား သည့် အလုပ် အားလပ်ရက် များ ပါဝင် သည့် အနားယူခွင့် နှင့် အားလပ်ခွင့် ခံစားပိုင်ခွင့် ရှိ သည်
+ဤ နည်း ကို စစ်ယူ သော နည်း ဟု ခေါ် သည်
+စာပြန်ပွဲ ဆို တာ က အာဂုံဆောင် အလွတ်ကျက် ထား တဲ့ ပိဋကတ်သုံးပုံ စာပေ တွေ ကို စာစစ် သံဃာတော်ကြီး တွေ ရဲ့ ရှေ့မှာ အလွတ် ပြန် ပြီး ရွတ်ပြ ရ တာ ပေါ့
+ဒီ မှာ ကျွန်တော့် သက်သေခံကတ် ပါ
+၂၀ ရာစု မြန်မာ့ သမိုင်း သန်း ဝင်း လှိုင် ၂၀၀၉ ခု မေ လ ကံကော်ဝတ်ရည် စာပေ
+ကျွန်တော် မျက်မှန် တစ် လက်လုပ် ချင်ပါတယ်
+ကျွန်တော် တို့ က ဒီ အမှု ရဲ့ ကြံရာပါ ကို ဖမ်းမိ ဖို့ ကြိုးစား ခဲ့ တယ်
+ကလေး မီးဖွား ဖို့ ခန့်မှန်း ရက် က ဘယ်တော့ ပါ လဲ
+အရိုးရှင်းဆုံး ကာဗိုဟိုက်ဒရိတ် မှာ ဂလူးကို့စ် ဂလက်တို့စ် ဖရပ်တို့စ် စသည့် မိုနိုဆက်ကရိုက် များ ဖြစ် သည်
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ ls debug_viz2/
+dag_line_0000.dot  dag_line_0002.dot  dag_line_0004.dot  dag_line_0006.dot  dag_line_0008.dot
+dag_line_0000.pdf  dag_line_0002.pdf  dag_line_0004.pdf  dag_line_0006.pdf  dag_line_0008.pdf
+dag_line_0001.dot  dag_line_0003.dot  dag_line_0005.dot  dag_line_0007.dot  dag_line_0009.dot
+dag_line_0001.pdf  dag_line_0003.pdf  dag_line_0005.pdf  dag_line_0007.pdf  dag_line_0009.pdf
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
+```
 
