@@ -7,7 +7,7 @@
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/figure/overview-of-oppaWord.png" width="800" alt="Overview of oppaWord Segmenter">
+  <img src="https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/figure/overview-of-oppaWord.png" width="1000" alt="Overview of oppaWord Segmenter">
 </div>
 
 
