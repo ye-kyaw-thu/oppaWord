@@ -156,5 +156,4 @@ oppaWord/
 └── oppa_word.py        # Main segmenter code
 ```
 
-Note: `exp_1`, `exp_2` and `exp_20250727_1553` folders are output folders from some experiments.  
-
+Note: `exp_1`, `exp_2`, and `exp_20250727_1553` are output folders from some earlier experiments.
