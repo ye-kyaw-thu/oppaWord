@@ -165,7 +165,31 @@ Note: [exp_1](https://github.com/ye-kyaw-thu/oppaWord/tree/main/exp_1), [exp_2](
 - One sentence per line
 - Space removal optional (handled by `--space-remove-mode`)
 
-### Performance Tips
+## Post-Editing Rules (rules.txt)
+
+oppaWord supports post-segmentation corrections through a rules file. This helps fix systematic errors and improve readability.
+
+### Rule Format
+
+SOURCE|||TARGET  
+
+### Types of Rules
+
+1. **Exact Word Replacements**:
+   ```text
+   ပါတယ်|||ပါ တယ်
+   မရှိ|||မ ရှိ
+   ```
+   - Merges or splits exact word matches
+   - Example: `"ပါတယ်"` → `"ပါ တယ်"`
+
+2. Regular Expressions:
+
+   ```text
+   (\S)([၊။])|||\1 \2
+   ```
+
+## Performance Tips
 
 1. For speed: Use `--dict-only --bimm-boost 150`
 2. For accuracy: Add `--arpa data/myMono_clean_syl.trie.bin`
