@@ -304,7 +304,7 @@ python ./tools/eval_segmentation.py \
   -H hypothesis.txt > results.txt
 ```
 
-```
+```bash
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ time python oppa_word.py   --input ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2   --dict data/myg2p_mypos.dict --space-remove-mode my_not_num  --use-bimm-fallback   --bimm-boost 150 --postrule-file ./data/rules.txt --output ./mypos-ver.3.0.noLM.rules.token.txt
 
 real    0m2.721s
@@ -313,11 +313,11 @@ sys     0m0.026s
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
 ```
 
-```
+```bash
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python ./tools/eval_segmentation.py -r ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2 -H  ./mypos-ver.3.0.noLM.rules.token.txt > result_noLM_Rule2.txt
 ```
 
-```
+```text
 
 Word Segmentation Evaluation Results
 ============================================================
