@@ -189,7 +189,7 @@ SOURCE|||TARGET
    (\S)([၊။])|||\1 \2
    ```
    - Uses regex patterns to handle:
-     --Punctuation attachment (`"ပါ။"` → `"ပါ ။"`)
+     - Punctuation attachment (`"ပါ။"` → `"ပါ ။"`)
    - Regex syntax follows Python's re module
 
 3. Best Practices
