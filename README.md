@@ -175,7 +175,7 @@ SOURCE|||TARGET
 
 ### Types of Rules
 
-1. **Exact Word Replacements**:
+1. Exact Word Replacements:
    ```text
    ပါတယ်|||ပါ တယ်
    မရှိ|||မ ရှိ
@@ -195,8 +195,8 @@ SOURCE|||TARGET
 3. Best Practices
 
    - Order Matters: Rules are applied top-to-bottom
-   - Balance Specificity:
-     -- Prefer exact matches (`ပါဘူး|||ပါ ဘူး`) over broad regex when possible
+   - Balance Specificity:  
+     -- Prefer exact matches (`ပါဘူး|||ပါ ဘူး`) over broad regex when possible  
   
 ## Performance Tips
 
