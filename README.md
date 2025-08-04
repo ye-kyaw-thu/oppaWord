@@ -49,7 +49,15 @@ cd oppaWord
 7z x data/5gramLM.7z.003
 ```
 
-   
+## Usage
+### Basic Command
+
+```
+python oppa_word.py \
+  --input input.txt \
+  --dict data/myg2p_mypos.dict \
+  --output segmented.txt
+```
 
 
 
