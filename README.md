@@ -221,7 +221,7 @@ oppaWord supports post-segmentation corrections through a rules file. This helps
 
 ### Rule Format
 
-SOURCE|||TARGET  
+WRONG_FORM|||CORRECT_FORM
 
 ### Types of Rules
 
