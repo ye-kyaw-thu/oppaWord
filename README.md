@@ -196,7 +196,7 @@ SOURCE|||TARGET
 
    - Order Matters: Rules are applied top-to-bottom
    - Balance Specificity:  
-     -- Prefer exact matches (`ပါဘူး|||ပါ ဘူး`) over broad regex when possible  
+     - Prefer exact matches (`ပါဘူး|||ပါ ဘူး`) over broad regex when possible  
   
 ## Performance Tips
 
