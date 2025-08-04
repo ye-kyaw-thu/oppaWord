@@ -37,6 +37,16 @@ oppaWord combines three core techniques:
 3. **Multi-Feature Scoring**:
    ```python
    Total_Score = Dict_Weight + Syllable_Freq + LM_Score + (Bi-MM_Boost)
+   ```
+
+## Installation
+
+```
+git clone https://github.com/ye-kyaw-thu/oppaWord.git  
+cd oppaWord  
+7z x data/5gramLM.7z.001  # Extract language model  
+```
+
    
 
 
