@@ -261,6 +261,7 @@ WRONG_FORM|||CORRECT_FORM
 We provide `eval_segmentation.py` - a comprehensive evaluation tool that offers:
 
 ### Key Features
+
 1. **Multi-Level Metrics**:
    - **Word-Level**: Precision, Recall, F1 (exact word matches)
    - **Boundary-Level**: Accuracy of word boundaries
@@ -296,13 +297,17 @@ options:
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
 ```
 
-#### Basic Evaluation
+### Basic Evaluation
 
 ```bash
 python ./tools/eval_segmentation.py \
   -r reference.txt \
   -H hypothesis.txt > results.txt
 ```
+
+### Example Evaluation Results  
+
+Word segmentation evaluation on the mypos-ver.3.0 corpus (43,196 sentences) using the following parameters: `--dict`, `--space-remove-mode`, `--use-bimm-fallback`, `--bimm-boost`, and `--postrule`:  
 
 ```bash
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ time python oppa_word.py   --input ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2   \
@@ -314,6 +319,8 @@ user    0m2.688s
 sys     0m0.026s
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
 ```
+
+Running `eval_segmentation.py` to compare reference and hypothesis files, with output saved to `result_noLM_Rule2.txt`:  
 
 ```bash
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python ./tools/eval_segmentation.py -r ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2 \
@@ -389,6 +396,7 @@ Most Frequent Complex Boundary Errors:
   146 × REF: 'ကြ' → HYP: 'ကြ၏'
   120 × REF: 'တောင်းပန်' → HYP: 'တောင်းပန်ပါ'
 ```
+
 ## License
 
 ### Source Code & Tools
