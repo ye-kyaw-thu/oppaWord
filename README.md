@@ -6,7 +6,7 @@
 
 ## Overview
 
-Myanmar language lacks strict word boundary rules, making word segmentation essential for NLP tasks. While existing tools like `[sylbreak](https://github.com/ye-kyaw-thu/sylbreak)` (syllable segmenter) and `[myWord](https://github.com/ye-kyaw-thu/myWord)` (multi-level segmenter) exist, **oppaWord** fills the critical need for a **fast**, **training-free** word segmenter with domain adaptation capabilities through:
+Myanmar language lacks strict word boundary rules, making word segmentation essential for NLP tasks. While existing tools like [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) (syllable segmenter) and [myWord](https://github.com/ye-kyaw-thu/myWord) (multi-level segmenter) exist, **oppaWord** fills the critical need for a **fast**, **training-free** word segmenter with domain adaptation capabilities through:
 
 - Hybrid DAG + Bi-MM + LM architecture
 - Post-editing rule support
