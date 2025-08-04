@@ -191,6 +191,12 @@ SOURCE|||TARGET
    - Uses regex patterns to handle:
      --Punctuation attachment (`"ပါ။"` → `"ပါ ။"`)
    - Regex syntax follows Python's re module
+
+3. Best Practices
+
+   - Order Matters: Rules are applied top-to-bottom
+   - Balance Specificity:
+     -- Prefer exact matches (`ပါဘူး|||ပါ ဘူး`) over broad regex when possible
   
 ## Performance Tips
 
