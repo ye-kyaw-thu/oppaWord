@@ -188,7 +188,10 @@ SOURCE|||TARGET
    ```text
    (\S)([၊။])|||\1 \2
    ```
-
+   - Uses regex patterns to handle:
+     --Punctuation attachment (`"ပါ။"` → `"ပါ ။"`)
+   - Regex syntax follows Python's re module
+  
 ## Performance Tips
 
 1. For speed: Use `--dict-only --bimm-boost 150`
