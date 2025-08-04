@@ -304,6 +304,86 @@ python ./tools/eval_segmentation.py \
   -H hypothesis.txt > results.txt
 ```
 
+```
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ time python oppa_word.py   --input ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2   --dict data/myg2p_mypos.dict --space-remove-mode my_not_num  --use-bimm-fallback   --bimm-boost 150 --postrule-file ./data/rules.txt --output ./mypos-ver.3.0.noLM.rules.token.txt
+
+real    0m2.721s
+user    0m2.688s
+sys     0m0.026s
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
+```
+
+```
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python ./tools/eval_segmentation.py -r ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2 -H  ./mypos-ver.3.0.noLM.rules.token.txt > result_noLM_Rule2.txt
+```
+
+```
+
+Word Segmentation Evaluation Results
+============================================================
+Metric                         Score
+------------------------------------------------------------
+Word Precision                0.9120
+Word Recall                   0.8889
+Word F1-score                 0.9003
+------------------------------------------------------------
+Boundary Precision            0.6475
+Boundary Recall               0.6311
+Boundary F1-score             0.6392
+------------------------------------------------------------
+Vocab Precision               0.8754
+Vocab Recall                  0.9398
+Vocab F1-score                0.9065
+============================================================
+
+Additional Statistics:
+Reference words: 510437
+Hypothesis words: 497503
+Correct words: 453708
+Reference vocabulary size: 24257
+Hypothesis vocabulary size: 26042
+Common vocabulary: 22797
+
+Top Segmentation Errors Analysis
+============================================================
+Total errors: 57106
+
+Most Frequent Over-Segmentation Errors (System split where it shouldn't):
+  120 × REF: 'သို့မဟုတ်' → HYP: 'သို့မ|ဟုတ်'
+  101 × REF: 'ဒါမှမဟုတ်' → HYP: 'ဒါမှမ|ဟုတ်'
+   81 × REF: 'ဒေါ်လာ' → HYP: 'ဒေါ်|လာ'
+   76 × REF: 'နာရီ' → HYP: 'နာ|ရီ'
+   57 × REF: 'ကျွန်တော်' → HYP: 'ကျွန်|တော်'
+   54 × REF: 'အသက်' → HYP: 'အ|သက်'
+   50 × REF: 'မိနစ်' → HYP: 'မိ|နစ်'
+   49 × REF: 'ညနေ' → HYP: 'ည|နေ'
+   47 × REF: 'မနက်' → HYP: 'မ|နက်'
+   42 × REF: 'အမှတ်' → HYP: 'အ|မှတ်'
+
+Most Frequent Under-Segmentation Errors (System joined what should be separate):
+  247 × REF: 'မ|ရ' → HYP: 'မရ'
+  175 × REF: 'တစ်|ခု|ခု' → HYP: 'တစ်ခုခု'
+  137 × REF: 'ယဉ်ကျေး|မှု' → HYP: 'ယဉ်ကျေးမှု'
+  137 × REF: 'နိုင်ငံ|ရေး' → HYP: 'နိုင်ငံရေး'
+  124 × REF: 'ဘာ|လဲ' → HYP: 'ဘာလဲ'
+  111 × REF: 'စ|၍' → HYP: 'စ၍'
+  110 × REF: 'တစ်|လုံး' → HYP: 'တစ်လုံး'
+  107 × REF: 'ပါ|ဦး' → HYP: 'ပါဦး'
+  104 × REF: 'တစ်|ပတ်' → HYP: 'တစ်ပတ်'
+  103 × REF: 'မ|တွေ့' → HYP: 'မတွေ့'
+
+Most Frequent Complex Boundary Errors:
+  350 × REF: 'ပေါ်' → HYP: 'ပေါ်မှာ'
+  230 × REF: 'ဖြစ်' → HYP: 'သည်'
+  218 × REF: 'သည်' → HYP: 'သည်မှာ'
+  192 × REF: 'ဟုတ်' → HYP: 'ဟုတ်တယ်'
+  188 × REF: 'နိုင်ငံ' → HYP: 'နိုင်'
+  167 × REF: '၏' → HYP: 'ငံ၏'
+  162 × REF: 'ဦး' → HYP: 'ဦး'
+  150 × REF: 'ဖြစ်' → HYP: 'ဖြစ်၏'
+  146 × REF: 'ကြ' → HYP: 'ကြ၏'
+  120 × REF: 'တောင်းပန်' → HYP: 'တောင်းပန်ပါ'
+```
 ## License
 
 ### Source Code & Tools
