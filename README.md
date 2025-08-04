@@ -11,6 +11,9 @@ oppaWord ဆိုတဲ့ နာမည်လား။ အစက ARPA LM ကိ
 
 လက်ရှိအချိန်ထိ အမျိုးမျိုး experiment တွေ လုပ်ကြည့်ခဲ့ပြီး စာကြောင်းရေ လေးသောင်းကျော်ကို (e.g. myPOS corpus တစ်ခုလုံး) စာလုံးဖြတ်ကြည်တာ ၁စက္ကန့်တောင် မကြာပါဘူး။ Language model ဖြည့်ပြီး run ရင်တော့ စက္ကန့်အနည်းငယ် ပိုကြာပါလိမ့်မယ်။ အဲဒါကြောင်း လက်ရှိအချိန်ထိ **မြန်မာစာအတွက် အမြန်ဆုံး word segmenter** ပါပဲ။ **오ppa빠ord** ကို အားပေးကြပါဦးလို့။  
 
+ရဲကျော်သူ  
+4 Aug 2025
+
 ## Overview
 
 Myanmar language lacks strict word boundary rules, making word segmentation essential for NLP tasks. While existing tools like [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) (syllable segmenter) and [myWord](https://github.com/ye-kyaw-thu/myWord) (multi-level segmenter) exist, **oppaWord** fills the critical need for a **fast**, **training-free** word segmenter with domain adaptation capabilities through:
