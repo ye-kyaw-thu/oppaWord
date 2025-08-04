@@ -225,6 +225,23 @@ The dictionary combines words from multiple sources:
 - ✅ **Allowed**: Myanmar language NLP/AI research and development
 - ❌ **Not Allowed**: Commercial use without explicit permission
 
-**Important Notes**:
-1. While LU Lab has spent years compiling this dictionary, we do not claim ownership of the underlying words.
-2. The dictionary is provided as a research aid - users assume full responsibility for compliance with original source requirements.
+## Detailed Technical Information
+
+For those interested in oppaWord's segmentation methodology and development process:  
+
+1. **Technical Introduction**  
+   - Presentation slides:  
+     [oppaWord_Intro.pdf](https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/talk/oppaWord_Intro.pdf)  
+     [oppaWord_Intro.pptx](https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/talk/oppaWord_Intro.pptx)  
+   - Covers: Core algorithm, visualization examples, and performance benchmarks
+
+2. **Experimental Notebooks**  
+   [![Open Notebooks](https://img.shields.io/badge/Explore-Notebooks-blue)](https://github.com/ye-kyaw-thu/oppaWord/tree/main/notebook)  
+   Contains Jupyter notebooks demonstrating:
+   - Different segmentation strategies
+   - Error analysis workflows
+   - Parameter tuning examples
+
+3. **Research Publications** *(Coming Soon)*  
+   - Planned journal paper on the hybrid segmentation approach
+
