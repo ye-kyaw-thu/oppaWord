@@ -255,7 +255,53 @@ SOURCE|||TARGET
 3. Domain adaptation:
    - Customize `data/rules.txt` for post-editing
    - Add domain terms to dictionary
-  
+
+## Evaluation
+
+We provide `eval_segmentation.py` - a comprehensive evaluation tool that offers:
+
+### Key Features
+1. **Multi-Level Metrics**:
+   - **Word-Level**: Precision, Recall, F1 (exact word matches)
+   - **Boundary-Level**: Accuracy of word boundaries
+   - **Vocabulary-Level**: Type-based analysis
+
+2. **Error Analysis**:
+   - Categorizes errors into:
+     - **Over-Segmentation**: System incorrectly splits words
+     - **Under-Segmentation**: System incorrectly merges words
+     - **Complex Errors**: Mixed boundary mistakes
+   - Shows top-K most frequent errors (configurable with `--top-k`)
+
+3. **Efficient Processing**:
+   - Handles large files (>500k words) in seconds
+   - Optional `--no-errors` flag for faster metric-only evaluation
+
+### Usage Examples
+
+```
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python ./tools/eval_segmentation.py --help
+usage: eval_segmentation.py [-h] -r REFERENCE [-H HYPOTHESIS] [--top-k TOP_K] [--no-errors]
+
+Enhanced Word Segmentation Evaluator with Error Analysis
+
+options:
+  -h, --help            show this help message and exit
+  -r REFERENCE, --reference REFERENCE
+                        Reference (gold standard) file (default: None)
+  -H HYPOTHESIS, --hypothesis HYPOTHESIS
+                        Hypothesis (system output) file (use - for stdin) (default: -)
+  --top-k TOP_K         Show top K most frequent errors (default: 10)
+  --no-errors           Skip error analysis to save time (default: False)
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
+```
+
+#### Basic Evaluation
+```bash
+python ./tools/eval_segmentation.py \
+  -r reference.txt \
+  -H hypothesis.txt > results.txt
+
 ## License
 
 ### Source Code & Tools
