@@ -147,13 +147,15 @@ Example output:
 
 ```
 oppaWord/
-├── data/               # Resource files
-│   ├── myg2p_mypos.dict       # Main dictionary
-│   ├── myMono.freq            # Syllable frequencies  
-│   └── myMono_clean_syl.arpa  # 5-gram LM
-├── doc/                # Documentation
-├── tools/              # Evaluation scripts
-└── oppa_word.py        # Main segmenter code
+├── data/ # Resource files
+│   ├── myg2p_mypos.dict # Main dictionary
+│   ├── myg2p_mypos_name.dict # Extended dictionary with Myanmar names
+│   ├── myMono.freq # Syllable frequency counts
+│   ├── myMono_clean_syl.trie.bin # 5-gram syllable LM (optimized binary)
+│   └── rules.txt # Post-processing correction rules
+├── doc/ # Documentation
+├── tools/ # Evaluation and preprocessing scripts
+└── oppa_word.py # Main segmenter code
 ```
 
 Note: [exp_1](https://github.com/ye-kyaw-thu/oppaWord/tree/main/exp_1), [exp_2](https://github.com/ye-kyaw-thu/oppaWord/tree/main/exp_2), and [exp_20250727_1553](https://github.com/ye-kyaw-thu/oppaWord/tree/main/exp_20250727_1553) are output folders from some earlier experiments.  
