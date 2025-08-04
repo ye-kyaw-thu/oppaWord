@@ -167,4 +167,8 @@ Note: [exp_1](https://github.com/ye-kyaw-thu/oppaWord/tree/main/exp_1), [exp_2](
 
 ### Performance Tips
 
-- For speed: Use `--dict-only --bimm-boost 200`
+1. For speed: Use `--dict-only --bimm-boost 150`
+2. For accuracy: Add `--arpa data/myMono_clean_syl.trie.bin`
+3. Domain adaptation:
+   - Customize `data/rules.txt` for post-editing
+   - Add domain terms to dictionary
