@@ -44,7 +44,9 @@ oppaWord combines three core techniques:
 ```
 git clone https://github.com/ye-kyaw-thu/oppaWord.git  
 cd oppaWord  
-7z x data/5gramLM.7z.001  # Extract language model  
+7z x data/5gramLM.7z.001  # Extract language model
+7z x data/5gramLM.7z.002
+7z x data/5gramLM.7z.003
 ```
 
    
