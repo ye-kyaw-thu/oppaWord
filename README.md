@@ -45,8 +45,6 @@ oppaWord combines three core techniques:
 git clone https://github.com/ye-kyaw-thu/oppaWord.git  
 cd oppaWord  
 7z x data/5gramLM.7z.001  # Extract language model
-7z x data/5gramLM.7z.002
-7z x data/5gramLM.7z.003
 ```
 
 ## Usage
@@ -59,7 +57,19 @@ python oppa_word.py \
   --output segmented.txt
 ```
 
+### Recommended Configuration
 
+For best accuracy with current 5-gram LM:  
+
+```
+python oppa_word.py \
+  --input text.txt \
+  --dict data/myg2p_mypos.dict \
+  --arpa data/myMono_clean_syl.trie.bin \
+  --use-bimm-fallback \
+  --bimm-boost 150 \
+  --space-remove-mode "my_not_num"
+```
 
 
 
