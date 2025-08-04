@@ -81,7 +81,11 @@ ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ time python oppa_word.py \
 real    0m2.586s    # Total elapsed time (including space removal preprocessing)
 user    0m2.555s
 sys     0m0.024s
-```
+```  
+
+<div style="text-align: center;">
+  <img src="https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/figure/screen_shot_of_oppaWord_running_noLM.png" width="1000" alt="oppaWord Running Screenshot">
+</div>
 
 ### Recommended Configuration
 
