@@ -71,8 +71,26 @@ python oppa_word.py \
   --space-remove-mode "my_not_num"
 ```
 
+### Full Options
 
+```
+$ python oppa_word.py --help
+usage: oppa_word.py [-h] --input INPUT [--output OUTPUT] --dict DICT [--sylfreq SYLFREQ] 
+                    [--arpa ARPA] [--postrule-file POSTRULE_FILE] [--max-order MAX_ORDER]
+                    [--dict-weight DICT_WEIGHT] [--use-bimm-fallback] [--bimm-boost BIMM_BOOST]
+                    [--visualize-dag] [--dag-output-dir DAG_OUTPUT_DIR]
+                    [--space-remove-mode {all,my,my_not_num}] [--max-word-len MAX_WORD_LEN]
 
-
+options:
+  -h, --help            show this help message and exit
+  --input INPUT, -i INPUT
+                        Input file (one sentence per line, UTF-8)
+  --dict DICT, -d DICT  Dictionary file (one word per line)
+  --arpa ARPA, -a ARPA  ARPA-format syllable LM
+  --use-bimm-fallback   Enable Bi-MM fallback
+  --bimm-boost BIMM_BOOST
+                        Bi-MM path score boost (default: 0.0)
+  --visualize-dag       Generate DAG visualizations
+```
 
 
