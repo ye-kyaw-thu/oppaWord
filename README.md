@@ -297,10 +297,12 @@ ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
 ```
 
 #### Basic Evaluation
+
 ```bash
 python ./tools/eval_segmentation.py \
   -r reference.txt \
   -H hypothesis.txt > results.txt
+```
 
 ## License
 
