@@ -142,3 +142,19 @@ Example output:
 <div style="text-align: center;">
   <img src="https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/figure/dag_line_0004.png" width="1000" alt="dag_line_0004.png">
 </div>
+
+## File Structure
+
+```
+oppaWord/
+├── data/               # Resource files
+│   ├── myg2p_mypos.dict       # Main dictionary
+│   ├── myMono.freq            # Syllable frequencies  
+│   └── myMono_clean_syl.arpa  # 5-gram LM
+├── doc/                # Documentation
+├── tools/              # Evaluation scripts
+└── oppa_word.py        # Main segmenter code
+```
+
+Note: `exp_1`, `exp_2` and `exp_20250727_1553` folders are output folders from some experiments.  
+
