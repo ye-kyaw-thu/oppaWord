@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{kotex} % For Korean support
+\usepackage{fontspec} % For custom fonts
+\usepackage[sfdefault, scaled=1.1]{roboto} % Modern sans-serif for Latin
+\usepackage{anyfontsize} % Allows arbitrary font sizes
+
+% Korean Fonts (Choose one)
+\setmainhangulfont{NanumMyeongjo} % Elegant serif
+%\setmainhangulfont{NanumBarunGothic} % Clean sans-serif
+%\setmainhangulfont{NanumBrush} % Handwritten style
+
+% Fallback font for non-Korean
+\setmainfont{Roboto}[
+  Scale=1.1,
+  BoldFont=Roboto Bold,
+  ItalicFont=Roboto Italic
+]
+
+% ===== Color Definitions =====
+% 1. Classic Dancheong
+\definecolor{deepblue}{RGB}{0, 51, 102}
+\definecolor{templered}{RGB}{204, 0, 0}
+\definecolor{templegreen}{RGB}{0, 102, 51}
+\definecolor{templeyellow}{RGB}{255, 204, 0}
+
+% 2. Pastel
+\definecolor{pastelblue}{RGB}{102, 153, 204}  
+\definecolor{pastelred}{RGB}{255, 102, 102}   
+\definecolor{pastelyellow}{RGB}{255, 229, 153} 
+\definecolor{pastelgreen}{RGB}{153, 204, 153} 
+
+% 3. High-Contrast
+\definecolor{royalblue}{RGB}{0, 35, 102}     
+\definecolor{scarlet}{RGB}{200, 0, 20}       
+\definecolor{gold}{RGB}{255, 215, 0}         
+\definecolor{emerald}{RGB}{0, 128, 70}      
+
+% 4. Alternating
+\definecolor{jangdanred}{RGB}{178, 34, 34} % Traditional red
+\definecolor{hanblue}{RGB}{0, 71, 171}    % Deep blue
+\definecolor{mustard}{RGB}{255, 185, 15}  % Yellow
+
+\begin{document}
+
+% ===== Design 1: Classic (Serif) =====
+{\centering
+\fontsize{36}{44}\selectfont
+\textcolor{templered}{오}%
+\textcolor{templegreen}{\textbf{p}}%
+\textcolor{deepblue}{\textbf{p}}%
+\textcolor{templeyellow}{\textbf{a}}%
+\textcolor{templered}{빠}%
+\textcolor{templegreen}{\textbf{o}}%
+\textcolor{deepblue}{\textbf{r}}%
+\textcolor{templeyellow}{\textbf{d}}%
+\par}
+
+% ===== Design 2: Pastel (Sans-Serif) =====
+{\centering
+\fontsize{40}{48}\selectfont\sffamily
+\textcolor{pastelred}{오}%
+\textcolor{pastelgreen}{p}%
+\textcolor{pastelblue}{p}%
+\textcolor{pastelyellow}{a}%
+\textcolor{pastelred}{빠}%
+\textcolor{pastelgreen}{o}%
+\textcolor{pastelblue}{r}%
+\textcolor{pastelyellow}{d}%
+\par}
+
+% ===== Design 3: High-Contrast (Bold) =====
+{\centering
+\fontsize{44}{52}\selectfont\bfseries
+\textcolor{scarlet}{오}%
+\textcolor{emerald}{p}%
+\textcolor{royalblue}{p}%
+\textcolor{gold}{a}%
+\textcolor{scarlet}{빠}%
+\textcolor{emerald}{o}%
+\textcolor{royalblue}{r}%
+\textcolor{gold}{d}%
+\par}
+
+% ===== Design 4: Alternating (Handwritten) =====
+{\centering
+\fontsize{48}{56}\selectfont
+\setmainhangulfont{NanumBrush}\selectfont % Switch to brush font
+\textcolor{jangdanred}{오}%
+\textcolor{hanblue}{p}%
+\textcolor{mustard}{p}%
+\textcolor{jangdanred}{a}%
+\textcolor{hanblue}{빠}%
+\textcolor{mustard}{o}%
+\textcolor{jangdanred}{r}%
+\textcolor{hanblue}{d}%
+\par}
+
+\end{document}
