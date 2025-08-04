@@ -137,3 +137,8 @@ dag_line_0001.pdf  dag_line_0003.pdf  dag_line_0005.pdf  dag_line_0007.pdf  dag_
 ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$
 ```
 
+Example output:  
+
+<div style="text-align: center;">
+  <img src="https://github.com/ye-kyaw-thu/oppaWord/blob/main/doc/figure/dag_line_0004.png" width="1000" alt="dag_line_0004.png">
+</div>
