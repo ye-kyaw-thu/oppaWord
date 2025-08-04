@@ -67,6 +67,22 @@ python oppa_word.py \
   --output segmented.txt
 ```
 
+oppaWord achieves **remarkable processing speeds** even on large corpora. Here's a benchmark from segmenting the entire myPOS corpus (43,196 sentences) **without** using a language model:
+
+```bash
+ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ time python oppa_word.py \
+  --input ../../corpus_info/tool/dagWord/data/mypos-ver.3.0.shuf.notag.nopunc.txt.seg_normalized2 \
+  --dict data/myg2p_mypos.dict \
+  --space-remove-mode my_not_num \
+  --use-bimm-fallback \
+  --bimm-boost 150 \
+  --output ./mypos-ver.3.0.noLM.norules.token.txt
+
+real    0m2.586s    # Total elapsed time (including space removal preprocessing)
+user    0m2.555s
+sys     0m0.024s
+```
+
 ### Recommended Configuration
 
 For best accuracy with current 5-gram LM:  
