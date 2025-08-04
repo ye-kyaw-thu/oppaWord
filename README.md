@@ -320,6 +320,8 @@ ye@lst-hpc3090:~/exp/myTokenizer/oppaWord$ python ./tools/eval_segmentation.py -
 -H  ./mypos-ver.3.0.noLM.rules.token.txt > result_noLM_Rule2.txt
 ```
 
+Contents of the evaluation output file (result_noLM_Rule2.txt):    
+
 ```text
 
 Word Segmentation Evaluation Results
