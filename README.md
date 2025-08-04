@@ -245,3 +245,20 @@ For those interested in oppaWord's segmentation methodology and development proc
 3. **Research Publications** *(Coming Soon)*  
    - Planned journal paper on the hybrid segmentation approach
 
+## Citation  
+
+If you use oppaWord in your work, please cite it as follows:  
+*(oppaWord ကို အသုံးပြုပါက အောက်ပါအတိုင်း ကိုးကားဖော်ပြပေးပါ။)*  
+
+```bibtex
+@misc{oppaWord_2025,
+  author       = {Ye Kyaw Thu},
+  title        = {{oppaWord: Hybrid DAG+Bi-MM+LM Myanmar Word Segmenter}},
+  version      = {1.0},
+  month        = {August},
+  year         = {2025},
+  publisher    = {GitHub},
+  url          = {https://github.com/ye-kyaw-thu/oppaWord},
+  note         = {Accessed: YYYY-MM-DD},
+  institution  = {Language Understanding Lab (LU Lab), Myanmar}
+}
